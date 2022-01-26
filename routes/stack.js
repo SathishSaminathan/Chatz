@@ -29,7 +29,7 @@ const AppStackData = [
 
 export function AppStack(props) {
 	return (
-		<Stack.Navigator initialRouteName={ROUTES.AUTH_SCREEN} screenOptions={{ headerShown: false }}>
+		<Stack.Navigator initialRouteName={ROUTES.SPLASH_SCREEN} screenOptions={{ headerShown: false }}>
 			{AppStackData.map((screen, index) => {
 				return (
 					<Stack.Screen
