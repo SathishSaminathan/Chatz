@@ -1,6 +1,6 @@
-import React from "react";
-import SplashFunctional from "./components/splash-functional";
+import React from 'react';
+import SplashFunctional from './components/splash-functional';
 
-const SplashScreen = ({ params }) => <SplashFunctional />;
+const SplashScreen = ({ navigation }) => <SplashFunctional {...{ navigation }} />;
 
 export default SplashScreen;
