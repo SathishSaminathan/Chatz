@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "528316341999",
+    "project_id": "chatz-ea610",
+    "storage_bucket": "chatz-ea610.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528316341999:android:2015b92b6269354b1f051a",
+        "android_client_info": {
+          "package_name": "com.sktech.chatz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528316341999-dd687lbs3feir1ne1qa8dv80l347i726.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sktech.chatz",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "528316341999-9ri5qvkuai0275ufalpukb9209sdcjbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKWSsra1asfc6hTYCPjKZPZdQlR6_B5bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528316341999-9ri5qvkuai0275ufalpukb9209sdcjbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,4 @@
-package com.chatapp;
+package com.sktech.chatz;
 
 import android.os.Build;
 import android.os.Bundle;
