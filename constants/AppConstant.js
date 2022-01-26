@@ -23,14 +23,14 @@ export const USERS = [
 		id: 1111,
 		image: 'https://randomuser.me/api/portraits/men/39.jpg',
 	},
-	{
-		name: 'Vinoth',
-		id: 2222,
-		image: 'https://randomuser.me/api/portraits/men/71.jpg',
-	},
+	// {
+	// 	name: 'Vinoth',
+	// 	id: 2222,
+	// 	image: 'https://randomuser.me/api/portraits/men/71.jpg',
+	// },
 	{
 		name: 'Eswaran',
-		id: 3333,
+		id: 2222,
 		image: 'https://randomuser.me/api/portraits/men/51.jpg',
 	},
 ];

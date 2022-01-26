@@ -34,8 +34,10 @@ const AuthPresentational = ({ onOpen, modalizeRef, navigation, login }) => (
 				<ButtonComponent style={{ marginBottom: 10 }} onPress={() => login(USERS[0])}>
 					Login as Sathish
 				</ButtonComponent>
-				<ButtonComponent style={{ marginBottom: 10 }}>Login as Vinoth</ButtonComponent>
-				<ButtonComponent style={{ marginBottom: 10 }}>Login as Eswaran</ButtonComponent>
+				{/* <ButtonComponent style={{ marginBottom: 10 }}>Login as Vinoth</ButtonComponent> */}
+				<ButtonComponent style={{ marginBottom: 10 }} onPress={() => login(USERS[1])}>
+					Login as Eswaran
+				</ButtonComponent>
 			</Content>
 		</Modalize>
 	</Content>

@@ -1449,6 +1449,11 @@
   resolved "https://registry.yarnpkg.com/@react-native-firebase/auth/-/auth-14.2.4.tgz#e6ab18be4f23da45b67b1e1fbdf579d8587f5998"
   integrity sha512-uITq4zr2AiNkvqaKKrZDbr8xSvtGcmVHUMYZek/xsOlF8MHvgB6OVclRzmbTZii9uEyBFq/sKd/na79S+Uzblw==
 
+"@react-native-firebase/firestore@^14.2.4":
+  version "14.2.4"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/firestore/-/firestore-14.2.4.tgz#5fecb70dbee3b1109003c0e561fbcc6eaf233c6c"
+  integrity sha512-2+R5g3Tea1Cts+bgGUNV+ZGQ5nKHzayls5fswhtvurUICHsJjs/R6ygf7tHqf9vrJGt8Z3j4NDhbxMrb3OruwA==
+
 "@react-native-google-signin/google-signin@^7.0.4":
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/@react-native-google-signin/google-signin/-/google-signin-7.0.4.tgz#b557be28dac0af8fd020010b8a9670ae65bedba8"
@@ -4118,6 +4123,11 @@ mkdirp@^0.5.1:
   integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
     minimist "^1.2.5"
+
+moment@^2.29.1:
+  version "2.29.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
+  integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
 ms@2.0.0:
   version "2.0.0"
