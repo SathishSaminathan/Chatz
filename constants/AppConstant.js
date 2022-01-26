@@ -17,11 +17,23 @@ export const FontType = {
 	SEMIBOLD: 'SEMIBOLD',
 };
 
-export const Stays = {
-	UPCOMING: 'UPCOMING',
-	PAST: 'PAST',
-	CANCELLED: 'CANCELLED',
-};
+export const USERS = [
+	{
+		name: 'Sathish',
+		id: 1111,
+		image: 'https://randomuser.me/api/portraits/men/39.jpg',
+	},
+	// {
+	// 	name: 'Vinoth',
+	// 	id: 2222,
+	// 	image: 'https://randomuser.me/api/portraits/men/71.jpg',
+	// },
+	{
+		name: 'Eswaran',
+		id: 2222,
+		image: 'https://randomuser.me/api/portraits/men/51.jpg',
+	},
+];
 
 export const IconType = {
 	FontAwesome: FontAwesome,
@@ -37,31 +49,13 @@ export const IconType = {
 	Octicons: Octicons,
 };
 
-export const AppVariables = {
-	USER: 'user',
-	TOKEN: 'token',
-	IS_FIRST_TIME_USER: 'IS_FIRST_TIME_USER',
-	NAME: 'NAME',
-	URL_SCHEMA: 'URL_SCHEMA',
-	TRANSFER_POINTS: 'TRANSFER_POINTS',
-	DONATE_REWARDS: 'DONATE_REWARDS',
-	ME: 'ME',
-	INCREMENT: 'INCREMENT',
-	DECREMENT: 'DECREMENT',
-};
-
-export const POST = 'POST';
-export const GET = 'GET';
-
 export const HEADER_HEIGHT = 60;
-
-// export const API_PORT=
-// export const API_IP = 'https://122.165.203.72:5094/vin-app-api/api/v1/';
-export const API_IP = 'http://122.165.203.72:9094/vin-app-api/api/v1/';
 
 export const ROUTES = {
 	AUTH_SCREEN: 'AUTH_SCREEN',
 	SPLASH_SCREEN: 'SPLASH_SCREEN',
+	CHAT_LIST: 'CHAT_LIST',
+	CHAT_SCREEN: 'CHAT_SCREEN',
 };
 
 export const OPACITY_TRANSLATE_ANIMATION = {
@@ -78,6 +72,16 @@ export const OPACITY_TRANSLATE_Y_ANIMATION = {
 	0: {
 		opacity: 0,
 		translateY: 50,
+	},
+	1: {
+		opacity: 1,
+		translateY: 0,
+	},
+};
+export const TOP_TO_BOTTOM = {
+	0: {
+		opacity: 0,
+		translateY: -50,
 	},
 	1: {
 		opacity: 1,
