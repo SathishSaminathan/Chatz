@@ -3,6 +3,8 @@ import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/
 import { ROUTES } from '../constants/AppConstant';
 import AuthScreen from '../screens/auth';
 import SplashScreen from '../screens/splash';
+import ChatList from '../screens/chat-list';
+import ChatScreen from '../screens/chat-screen';
 
 const Stack = createStackNavigator();
 
@@ -15,11 +17,19 @@ const AppStackData = [
 		name: ROUTES.SPLASH_SCREEN,
 		component: SplashScreen,
 	},
+	{
+		name: ROUTES.CHAT_LIST,
+		component: ChatList,
+	},
+	{
+		name: ROUTES.CHAT_SCREEN,
+		component: ChatScreen,
+	},
 ];
 
 export function AppStack(props) {
 	return (
-		<Stack.Navigator initialRouteName={ROUTES.SPLASH_SCREEN} screenOptions={{ headerShown: false }}>
+		<Stack.Navigator initialRouteName={ROUTES.AUTH_SCREEN} screenOptions={{ headerShown: false }}>
 			{AppStackData.map((screen, index) => {
 				return (
 					<Stack.Screen

@@ -2,8 +2,8 @@ import React from 'react';
 import { View, ActivityIndicator, Platform } from 'react-native';
 import Ripple from 'react-native-material-ripple';
 import Feather from 'react-native-vector-icons/Feather';
-import { RFPercentage, SPACING } from 'react-native-responsive-fontsize';
-import { Colors } from '../constants/ThemeConstants';
+import { RFPercentage } from 'react-native-responsive-fontsize';
+import { Colors, SPACING } from '../constants/ThemeConstants';
 import { FontType } from '../constants/AppConstant';
 import TextComponent from './text';
 
