@@ -2,6 +2,8 @@ import React from 'react';
 import auth from '@react-native-firebase/auth';
 import { GoogleSignin, GoogleSigninButton } from '@react-native-google-signin/google-signin';
 import { Content, TextComponent } from '../../components';
+import { View } from 'react-native';
+import { FontType } from '../../constants/AppConstant';
 
 const AuthScreen = ({ navigation }) => {
 	GoogleSignin.configure({
@@ -23,14 +25,9 @@ const AuthScreen = ({ navigation }) => {
 	};
 	return (
 		<Content>
-			<TextComponent>AuthScreen</TextComponent>
-			<GoogleSigninButton
-				style={{ width: 192, height: 48 }}
-				size={GoogleSigninButton.Size.Wide}
-				color={GoogleSigninButton.Color.Dark}
-				onPress={onGoogleButtonPress}
-				// disabled={this.state.isSigninInProgress}
-			/>
+			<View>
+				<TextComponent type={FontType.BOLD}>Find your friends in one place</TextComponent>
+			</View>
 		</Content>
 	);
 };
