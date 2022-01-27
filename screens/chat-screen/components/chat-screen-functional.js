@@ -7,6 +7,7 @@ const ChatScreenFunctional = ({ params }) => {
 	const [message, setMessage] = React.useState('');
 	const { selectedUser, currentUser } = useAuthContext();
 	const [messages, setMessages] = React.useState([]);
+	const scrollViewRef = React.useRef(null);
 
 	React.useEffect(() => {
 		const subscriber = firestore()
@@ -36,7 +37,7 @@ const ChatScreenFunctional = ({ params }) => {
 		setMessage('');
 	};
 
-	return <ChatScreenPresentational {...{ selectedUser, currentUser, messages, message, setMessage, handleSendMessage }} />;
+	return <ChatScreenPresentational {...{ selectedUser, currentUser, messages, message, setMessage, handleSendMessage, scrollViewRef }} />;
 };
 
 export default ChatScreenFunctional;

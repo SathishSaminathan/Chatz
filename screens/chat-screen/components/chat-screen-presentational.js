@@ -10,10 +10,13 @@ import { Colors, FONT_SIZE, SPACING } from '../../../constants/ThemeConstants';
 
 const IMAGE_SIZE = RFPercentage(7);
 
-const ChatScreenPresentational = ({ messages, selectedUser, currentUser, message, setMessage, handleSendMessage }) => (
+const ChatScreenPresentational = ({ messages, selectedUser, currentUser, message, setMessage, handleSendMessage, scrollViewRef }) => (
 	<Content noPadding>
 		<Header title={selectedUser.name} back />
-		<ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+		<ScrollView
+			ref={scrollViewRef}
+			onContentSizeChange={() => scrollViewRef.current.scrollToEnd({ animated: true })}
+			contentContainerStyle={{ flexGrow: 1 }}>
 			{messages
 				?.sort((a, b) => moment(a.time) - moment(b.time))
 				.map((data, index) => {
@@ -66,11 +69,13 @@ const ChatScreenPresentational = ({ messages, selectedUser, currentUser, message
 					placeholder="enter your message"
 					style={{ fontFamily: 'ProximaNova-Regular', width: '90%', fontSize: FONT_SIZE.LARGE }}
 				/>
-				<View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
-					<TouchableOpacity onPress={handleSendMessage} activeOpacity={1}>
-						<IconComponent type={IconType.Feather} name="send" />
-					</TouchableOpacity>
-				</View>
+				{message ? (
+					<View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+						<TouchableOpacity disabled={!message} onPress={handleSendMessage} activeOpacity={1}>
+							<IconComponent type={IconType.Feather} name="send" size={FONT_SIZE.X_LARGE} />
+						</TouchableOpacity>
+					</View>
+				) : null}
 			</View>
 		</View>
 	</Content>
