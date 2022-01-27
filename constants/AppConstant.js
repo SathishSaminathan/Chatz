@@ -96,3 +96,7 @@ export const OPACITY_ANIMATION = {
 		opacity: 1,
 	},
 };
+
+export const PLACEHOLDERS = {
+	CHAT_LiST: 'CHAT_LiST',
+};
